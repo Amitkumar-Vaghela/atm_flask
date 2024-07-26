@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Money</title>
+</head>
+<body>
+    <h1>Deposit Money</h1>
+    <form method="POST">
+        <label for="name">Account Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="amount">Amount:</label>
+        <input type="number" step="0.01" id="amount" name="amount" required>
+        <button type="submit">Deposit</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
